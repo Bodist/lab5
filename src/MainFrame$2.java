@@ -1,6 +1,3 @@
-public class MainFrame$2 {
-}
-package bsu.rfe.java.teacher;
 
         import java.awt.event.ActionEvent;
         import javax.swing.AbstractAction;

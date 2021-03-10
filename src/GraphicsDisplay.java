@@ -10,11 +10,6 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
-
-public class DraphicsDisplay {
-}
-package bsu.rfe.java.teacher;
-
         import java.awt.BasicStroke;
         import java.awt.Color;
         import java.awt.Cursor;
@@ -32,7 +27,6 @@ package bsu.rfe.java.teacher;
         import java.util.ArrayList;
         import java.util.Iterator;
         import javax.swing.JPanel;
-
 public class GraphicsDisplay extends JPanel {
     private ArrayList<Double[]> graphicsData;
     private ArrayList<Double[]> originalData;

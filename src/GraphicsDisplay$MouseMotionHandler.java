@@ -1,6 +1,4 @@
-public class GraphicsDisplay$MouseMotionHandler {
-}
-package bsu.rfe.java.teacher;
+
 
         import java.awt.Cursor;
         import java.awt.event.MouseEvent;

@@ -3,11 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.*;
 import java.util.ArrayList;
-
-public class MainFrame {
-}
-package bsu.rfe.java.teacher;
-
         import java.awt.Toolkit;
         import java.awt.event.ActionEvent;
         import java.io.DataInputStream;
