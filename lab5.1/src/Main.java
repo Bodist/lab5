@@ -69,8 +69,7 @@ public class Main extends JFrame {
         // Создать действие для реакции на активацию элемента "Показывать оси координат"
         Action showAxisAction = new AbstractAction("Показывать оси  координат") {
             public void actionPerformed(ActionEvent event) {
-                // свойство showAxis класса GraphicsDisplay истина, если элемент меню
-                // showAxisMenuItem отмечен флажком, и ложь - в противном случае
+                // свойство showAxis класса GraphicsDisplay истина, если элемент меню showAxisMenuItem отмечен флажком, и ложь - в противном случае
                 display.setShowAxis(showAxisMenuItem.isSelected());
             }
         };
@@ -124,17 +123,17 @@ public class Main extends JFrame {
             while (in.available() > 0) {
                 Double x = Double.valueOf(in.readDouble());
                 Double y = Double.valueOf(in.readDouble());
-                graphicsData.add(new Double[] { x, y });
+                graphicsData.add(new Double[]{x, y});
             }
             if (graphicsData.size() > 0) {
                 fileLoaded = true;
                 resetGraphicsMenuItem.setEnabled(true);
                 display.showGraphics(graphicsData);
             }
-        }catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             JOptionPane.showMessageDialog(Main.this, "Указанный файл не найден", "Ошибка загрузки данных", JOptionPane.WARNING_MESSAGE);
             return;
-        }catch (IOException e){
+        } catch (IOException e) {
             JOptionPane.showMessageDialog(Main.this, "Ошибка чтения  координат точек из файла", "Ошибка загрузки данных",
                     JOptionPane.WARNING_MESSAGE);
         }
@@ -164,3 +163,4 @@ public class Main extends JFrame {
         public void menuCanceled(MenuEvent e) {
         }
     }
+}
